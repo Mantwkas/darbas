@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lentele</title>
+    <style>
+    table, th, td{
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+    table {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    td {
+        text-align: center;
+    }
+    .space-right {
+       margin-right: 1 rem; 
+       font-size: 13px;
+    }
+    div label {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 0.5rem;
+    }
+    form div {
+        width: 300px;
+    }
+    .two-columns {
+        display: flex;
+        gap: 200px;
+        margin-top: 100px;
+    }
+    button {
+        background-color: rgb(14, 34, 94);
+        border-radius: 3px;
+        color: white;
+        border-style: none;
+        padding: 7px 20px 7px 20px;
+        margin-left: 100px;
+    }
+    input {
+        padding-left: 10px;
+        width: 200px;
+        height: 25px;
+        box-shadow: -0.5px -0.5px;
+        border: 1px solid black;
+        border-radius: 3px;
+        font-size: 10px;
+    }
+    #number {
+        margin-left: 30px;
+    }
+</style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Age</th>
+                <th>Nationality</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <div class="two-columns">
+        <div>
+            <h2>Elementų pridėjimas</h2>
+            <form>
+                <div>
+                    <label>
+                        <span class="space-right">First Name</span>
+                        <input
+                            type="text"
+                            placeholder="First Name"
+                            id="firstNameInput"
+                        />
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        <span class="space-right">Last Name</span>
+                        <input
+                            type="text"
+                            placeholder="Last Name"
+                            id="lastNameInput"
+                        />
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        <span class="space-right">Age</span>
+                        <input
+                            type="text"
+                            placeholder="Age"
+                            id="ageInput"
+                        />
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        <span class="space-right">Nationality</span>
+                        <input
+                            type="text"
+                            placeholder="Nationality"
+                            id="nationalityInput"
+                        />
+                    </label>
+                </div>
+            </form>
+            <div>
+                <!-- Mygtuko funkcionalumas pasinaudojant elementu JS'e -->
+                <button id="add-button">Add</button>
+            </div>
+        </div>
+       <div>
+            <h2>Elementų pašalinimas</h2>
+            <label>
+                <span class="space-right">Person number</span>
+                <input
+                    type="number"
+                    placeholder="Person number"
+                    id="number"
+                />
+            </label>
+            <button id="remove-button">Remove</button>
+        </div>
+    </div>
+    <script src="script2.js"></script>
+</body>
+</html>

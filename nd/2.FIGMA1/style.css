@@ -1,0 +1,201 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    margin: 0;
+    background: url(back.png) no-repeat center center;
+}
+.contact {
+    position: relative;
+    background-color: white;
+    max-width: 1440px;
+    width: 100%;
+    margin: 100px auto;
+    border-radius: 40px;
+    padding: 30px 50px;
+    overflow: hidden;
+}
+.contact::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #6DE1C2;
+    height: 100%;
+    width: 419px;
+}
+.contact-inner {
+    height: 550px;
+    display: flex;
+    position: relative;
+    z-index: 1;
+}
+.left {
+    background-color: white;
+    width: 50%;
+    height: 100%;
+
+}
+.title {
+    font-size: 30px;
+    font-weight: bold;
+    width: 545px;
+    height: 24px;
+    position: absolute;
+    top: 25px;
+    left: 98px;
+}
+.title2 {
+    font-size: 13px;
+    width: 470px;
+    height: 48px;
+    position: absolute;
+    top: 51px;
+    left: 97px;
+}
+.form {
+    width: 551px;
+    height: 368px;
+    top: 150px;
+    left: 95px;
+    }
+.right {
+    background-image: url(map.png);
+    width: 50%;
+    height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .contact-inner {
+        flex-direction: column;
+    }
+
+    .left,
+    .right {
+        width: 100%;
+    }
+}
+.form {
+    display: flex;
+    gap: 10px;
+    width: 470px;
+    height: 30px;
+}
+
+input {
+    display: flex;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding: 10px;
+    border-color: rgb(200, 193, 193);
+}
+.form2 {
+    width: 548px;
+    height: 368px;
+    position: absolute;
+    top: 130px;
+    left: 95px;
+}
+input[type=contact] {
+    width: 470px;
+    height: 35px;
+  }
+input[type=street] {
+    width: 470px;
+    height: 35px;
+  }
+input[type=city] {
+    width: 357px;
+    height: 35px;
+  }
+input[type=postcode] {
+    width: 167px;
+    height: 35px;
+  }
+input[type=phone] {
+    width: 470px;
+    height: 35px;
+  }
+input[type=email] {
+    width: 470px;
+    height: 35px;
+  }
+input[type=about] {
+    width: 470px;
+    height: 35px;
+  } 
+.upload {
+    width: 470px;
+    height: 60px;
+    position:absolute;
+    text-align: center;
+    top: 340px;
+    left: 90px;
+}
+.upload tr, td {
+    width: 470px;
+    height: 60px;
+    position: absolute;
+    border: 1px dashed rgb(190, 185, 185);
+    text-align: center;
+}
+#upload2 {
+    color: #8E8E8E;
+    font-size: 10px;
+    position: absolute;
+    top: 405px;
+    left: 90px;
+}
+#upload2 {
+    color: #8E8E8E;
+    font-size: 8px;
+    position:absolute;
+    text-align: center;
+    align-items: center;
+}
+#check {
+    display: flex;
+    width: 470px;
+    height: 40px;
+    position: absolute;
+    color: #383C3E;
+    font-size: 12px;
+    top: 430px;
+    left: 90px;
+   align-items: center;
+}
+button {
+    background-color: #0982FE;
+    width: 470px;
+    height: 40px;
+    border-radius: 8px;
+    border-color: #0982FE;
+    Color: white;
+    font-weight: bold;
+    position: absolute;
+    top: 465px;
+    left: 90px;
+}
+.end {
+    width: 470px;
+    height: 30px;
+    position: absolute;
+    display: flex;
+    justify-content: space-evenly;
+    top: 520px;
+    left: 90px;
+}
+.box {
+    background-color: white;
+    color: black;
+    font-size: 10px;
+}
+.box2 {
+    font-size: 9px;
+}
+#red {
+    color: #DD5471;
+}

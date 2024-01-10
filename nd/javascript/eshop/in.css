@@ -1,0 +1,264 @@
+body {
+    font-family: 'Single Day', cursive;
+    margin: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0;
+}
+
+nav {
+    padding: 0;
+    width: 20%;
+    background-color: #c8e7f0;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    border-radius: 4px;
+}
+
+.nav-container{
+    padding: 1rem 0;
+    display: grid;
+    margin-left: 10px;
+}
+
+#coctailNameFilter{
+    background-color: rgb(224, 156, 136);
+    border: 0;
+    padding: 0.5rem;
+    border-radius: 6px;
+    width: 75%;
+    margin-bottom: 20px;
+}
+
+.nav-container select {
+    background-color: rgb(224, 156, 136);
+    border: 0;
+    padding: 0.5rem;
+    border-radius: 6px;
+    color: rgb(246, 246, 241);
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+.buttonsTwo {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-container button{
+    width: 40%;
+    height: 150%;
+    background-color: rgb(75, 13, 29);
+    border: 0;
+    border-radius: 4px;
+    color:rgb(244, 248, 248);
+    padding: 0.25rem 0.5rem;
+    cursor: pointer;
+}
+
+.nav-container button:hover{
+    background-color: rgb(242, 233, 225);
+    color: brown;
+}
+
+.drinks {
+    margin-left: 20%;
+    padding: 1px 16px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+}
+
+.drink {
+    width: 80%;
+    margin: 0 auto;
+    box-shadow: 1px 2px 10px rgb(181, 183, 183);
+    border-radius: 10px; 
+}
+
+.drink img {
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.drink h2 {
+    text-align: center;
+}
+
+::backdrop {
+    background-color: rgb(64, 42, 7);
+    opacity: 0.55;
+}
+
+dialog {
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 30%;
+    height: 80%;
+}
+
+dialog img {
+    width: 100%;
+    height: 60%;
+}
+
+.pav {
+    text-align: center;
+}
+
+.table {
+    text-align: left;
+}
+.table td {
+    padding-left: 50px;
+    font-size: 12px;
+}
+
+.recipe {
+    display: flex;
+    font-size: 14px;
+    gap: 20px;
+}
+.recipe h3{
+   margin-top: 8px;
+}
+
+#modal-recipe {
+    font-size: 12px;
+}
+#modal-ingredient2 {
+    margin-left: 17px;
+}
+
+#modal-ingredient2 th,
+#modal-ingredient2 td{
+    font-size: 12px;
+}
+
+.ingr {
+    display: flex;
+    margin: 20px 0;
+
+}
+.name {
+    font-weight: bold;
+}
+
+@media screen and (max-width: 1100px) {
+    .buttonTwo{
+        display: grid;
+        gap: 20px;
+        width: 180%;
+    }
+    .nav-container button{
+        font-size: 12px;
+    }
+    .nav-container{
+        margin-left: 10px;
+    }
+  }
+
+@media screen and (max-width: 990px) {
+    .buttonTwo{
+        gap: 20px;
+        width: 120%;
+    }
+    .drink h2 {
+        font-size: 17px;
+    }
+    #coctailNameFilter,
+    .nav-container select {
+        margin-bottom: 12px;
+    }
+    .recipe h3{
+        margin-top: 3px;
+     }
+     .ingr {
+         margin: 8px 0;
+     
+     }
+     .pav {
+       font-size: 16px;
+     }
+     .dialog img {
+        width: 80%;
+        height: 50%;
+     }
+     table, .ingr, .recipe, #modal-ingredient2 {
+        font-size: 12px;
+     }
+     
+}
+@media screen and (max-width: 820px) {
+    .drinks {
+        gap: 1rem;
+    }
+    .drink {
+        width: 90%;
+    } 
+    #coctailNameFilter,
+    .nav-container select {
+        font-size: 10px;
+    }
+    #search, #lucky{
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .drinks {
+        gap: 1rem;
+    }
+    .drink {
+        width: 90%;
+    }
+    .drink h2 {
+        font-size: 12px;
+    }
+    #modal-recipe {
+        font-size: 10px;
+    }
+    .pav {
+        font-size: 13px;
+    }
+    .dialog img {
+         width: 70%;
+         height: 40%;
+    }
+    table {
+         font-size: 10px;
+    }
+    .recipe,
+    .recipe h3{
+        font-size: 10px;
+    }
+    .table td{
+        padding-left: 10px;
+        font-size: 10px;
+    }
+    .name {
+       font-size: 10px;
+    }
+    #modal-ingredient2 {
+        margin-left: 6px;
+    }
+    #modal-ingredient2 th,
+    #modal-ingredient2 td{
+    font-size: 10px;
+    }
+    dialog button{
+        font-size: 10px;
+    }
+    #coctailNameFilter,
+    .nav-container select {
+        font-size: 8px;
+    }
+    #search, #lucky{
+        font-size: 8px;
+    }
+    .buttonTwo{
+        gap: 10px;
+    }
+}

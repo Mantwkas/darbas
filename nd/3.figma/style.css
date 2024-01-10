@@ -1,0 +1,121 @@
+body {
+    width: 1340px;
+    height: 770px;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+.wrapper {
+    display: flex;
+}
+.wrapper aside {
+    width: 100%;
+}
+.wrapper main {
+    width: 100%;
+}
+.left {
+    width: 475px;
+    height: 744px;
+    margin-top: 10px;
+}
+.right {
+    width: 860px;
+    height: 770px;
+}
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    width: 350px;
+    height: 290px;
+    padding-top: 300px;
+    padding-left: 200px;
+}
+.one {
+color: var(--gray-cool-gray-800, #1F2937);
+text-align: center;
+font-family: Open Sans;
+font-size: 18px;
+font-weight: 700;
+line-height: normal;
+}
+.three {
+    display: flex;
+    gap: 15px;
+    text-align: center;
+    padding: 0 6px;
+}
+.line {
+    color: var(--gray-cool-gray-500, #6B7280);
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+}
+.line2 {
+    color: var(--primery-100, #6D58BA);
+    font-family: Open Sans;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 22px;
+    background-color: rgb(233, 229, 229);
+}
+.four {
+    display: flex;
+    gap: 12px;
+    border-radius: 6px;
+    border: 1px solid var(--gray-cool-gray-200, #E5E7EB);
+    background: var(--white, #FFF);
+    width: 200px;
+    height: 30px;
+    font-size: 14px;
+}
+.password{
+    padding-left: 70px;
+    padding-top: 3px;
+}
+.psw {
+    padding-top: 5px;
+}
+.five {
+color: var(--gray-cool-gray-500, #6B7280);
+font-family: Open Sans;
+font-size: 12px;
+font-weight: 600px;
+line-height: 15px;
+padding-right: 50px;
+}
+.six {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.arrow {
+    background-color: #d3d8e0;
+}
+.button {
+    background: #0982FE;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 10px;
+    width: 180px
+}
+.seven {
+color: var(--gray-cool-gray-500, #6B7280);
+font-family: Open Sans;
+font-size: 10px;
+line-height: 20px;
+align-items: center;
+}
+@media screen and (max-width: 770px) {
+    body {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+         align-items: center;
+    }
+}

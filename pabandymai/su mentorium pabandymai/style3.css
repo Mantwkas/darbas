@@ -1,0 +1,20 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: rgb(59, 93, 180);
+    width: 22rem;
+    color: white;
+    text-align: center;
+}
+
+div {
+    margin-top: 20px;
+}
+button {
+    margin-top: 20px;
+}

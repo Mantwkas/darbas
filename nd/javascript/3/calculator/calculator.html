@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATOR</title>
+    <link rel="icon" href="logo.png">
+    <style>
+      body {
+        text-align: center;
+        margin: 50px;
+      }
+      .box {
+            border: 3px solid black;
+            background-color: rgb(158, 142, 118);
+            border-radius: 10px;
+            width: 100%;
+            text-align: center;
+            padding-top: 10px;
+
+      }
+    </style>
+</head>
+<body>
+    <h3>Skaičiuotuvas</h3>
+<div class="box">
+    <label for="x">Įveskite skaičių x:</label>
+    <input type="number" id="x" name="x" required>
+  
+    <select id="select">
+      <option value="add">Sudėtis (+)</option>
+      <option value="substract">Atimtis (-)</option>
+      <option value="multiply">Daugyba(*)</option>
+      <option value="divide">Dalyba (/)</option>
+      <option value="power">Kėlimas laipsniu (^)</option>
+    </select>
+  
+    <label for="y">Įveskite skaičių y:</label>
+    <input type="number" id="y" name="y" required>
+  
+    <br>
+  
+    <button class="pt-5 mt-5" onclick="calculate()">Apskaičiuoti</button>
+  
+    <br>
+  
+    <p id="result">Atsakymas: </p>
+</div>
+    <script src="script.js"></script>
+  
+</body>
+</html>
+

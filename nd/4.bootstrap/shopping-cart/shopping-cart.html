@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart Prototype</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"/>
+    <link href="cart.png" rel="icon">
+    <style>
+        body {
+            background-color: rgb(150, 114, 165);
+        }
+        span { 
+            cursor:pointer; 
+        }
+        .number {
+            width: 50px;
+        }
+        .one {
+            border-top: 1px solid rgb(209, 207, 207); 
+        }
+        .two {
+            border-top: 1px solid rgb(209, 207, 207); 
+            border-bottom: 1px solid rgb(209, 207, 207); 
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container d-flex p-4">
+        <div class="col-md-8 bg-white px-3 py-4 rounded-start">
+          <div class="d-flex align-items-center justify-content-between">
+            <h1 class="fw-bold">Shopping Cart</h1>
+            <p class="text-secondary fw-semibold mt-2">3 items</p>
+          </div>
+
+
+          <div class="d-flex justify-content-between mt-4 py-5 align-items-center one">
+          <div>
+            <img src="pirma.png" style="width: 60px; height: 60px" class="rounded-4" />
+          </div>
+          <div class="mt-4">
+            <p class="fw-semibold text-secondary">Shirt</p>
+            <p class="fw-semibold">Cotton T-Shirt</p>
+          </div>
+          <div class="align-items-center">
+            <span class="text-primary">-</span>
+            <input class="number" type="text" value="1"/>
+            <span class="text-primary">+</span>
+        </div>
+          <div class="mt-4">
+            <p class="fw-semibold text-secondary">$29.99</p>
+          </div>
+          <div class="fs-2">
+            <p class="fw-semibold text-secondary mt-4"><i class="bi bi-x"></i></p>
+          </div>
+        </div>
+        <div class="d-flex justify-content-between py-5 align-items-center one">
+          <div> <img src="antra.png" style="width: 60px; height: 60px" class="rounded-4"/>
+          </div>
+          <div class="mt-4">
+            <p class="  text-secondary">Shirt</p>
+            <p class="fw-semibold">Cotton T-Shirt</p>
+          </div>
+          <div class="align-items-center">
+            <span class="text-primary">-</span>
+            <input class="number" type="text" value="1"/>
+            <span class="text-primary">+</span>
+        </div>
+          <div class="mt-4">
+            <p class="fw-semibold text-secondary">$39.99</p>
+          </div>
+          <div class="fs-2">
+            <p class="fw-semibold text-secondary mt-4"><i class="bi bi-x"></i></p>
+          </div>
+        </div>
+        <div class="d-flex justify-content-between py-5 align-items-center two">
+        <div>
+          <img src="trecia.png" style="width: 60px; height: 60px" class="rounded-4"/>
+        </div>
+        <div class="mt-4">
+          <p class="fw-semibold text-secondary">Shirt</p>
+          <p class="fw-semibold">Cotton T-Shirt</p>
+        </div>
+            <div class="align-items-center">
+              <span class="text-primary">-</span>
+              <input class="number" type="text" value="1"/>
+             <span class="text-primary">+</span>
+            </div>
+        <div class="mt-4">
+          <p class="fw-semibold text-secondary">$49.99</p>
+        </div>
+        <div class="fs-2">
+          <p class="fw-semibold text-secondary mt-3"><i class="bi bi-x"></i></p>
+        </div>
+      </div>
+      <div class="mt-4">
+        <h6 class="fw-semibold text-secondary"><i class="bi bi-arrow-left"></i>Back to shop</h6>
+      </div>
+    </div>
+    
+      
+    <div class="col-md-4 bg-secondary-subtle py-5 px-5 rounded-end">
+        <div class="mt-2"><h2 class="text-black-50 fw-bold">Summary</h2></div>
+        <div class="mt-4 two">
+            <div class="d-flex justify-content-between mt-3 align-items-center">
+                <h4 class="text-black">ITEMS 3</h4>
+                <h4 class="text-black">$ 119.97</h4>
+            </div>
+            <div class="d-block mt-4 align-items-center">
+                <h5 class="text-black">SHIPPING</h5>
+                <select class="form-select bg-secondary-subtle border border-secondary-subtle" aria-label="Default select example">
+                    <option selected>Next day Delivery $15.00</option>
+                    <option value="1">2-3 day Delivery $7.50</option>
+                    <option value="2">Standart Delivery $5.00</option>
+                  </select>
+            </div>
+            <div class="f-block mt-4 mb-4">
+                <h5 class="text-black">GIVE CODE</h5>
+                <input class="form-control bg-secondary-subtle border border-secondary-subtle" type="text" placeholder="Enter your code">
+            </div>
+        </div>
+        <div class="mt-4">
+            <div class="d-flex justify-content-between">
+                <h4 class="text-black">TOTAL PRICE</h4>
+                <h4 class="text-black">$ 134.97</h4>
+            </div>
+            <div class="d-flex justify-content-center align-items-center  mt-4">
+                <button type="button" class="btn btn-dark btn-lg" style="width: 100%">Register</button>
+            </div>
+        </div>
+      </div>
+      <div></div>
+    </div>
+</div>
+   
+</body>
+</html>

@@ -1,0 +1,168 @@
+html {
+    scroll-behavior: smooth;
+ }
+body {
+    margin: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: linear-gradient(90deg, #ccce91 10%, #946c31 100%);
+}
+.body{
+    background-image: url(coveris.png);
+    background-position: center;
+    background-size: cover;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: url(coveris.png);
+    background-position: center;
+    background-size: cover;
+}
+.navbar {
+    width: 85%;
+    margin: auto;
+    padding: 35 px 0;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #00bfc6;
+}
+.foto {
+    margin: 50px;
+    width: 100px; 
+    height: 100px;
+    border-radius: 25%;
+    background-color: #00bfc6;
+}
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+
+}
+.navbar ul li a{
+    text-decoration:none;
+    color:rgba(20, 2, 2, 0.993);
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: rgb(211, 10, 10);
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+.navbar ul li:visited {
+    color: rgb(245, 62, 62);
+}
+.container{
+   max-width: 1200px;
+    margin: 0 auto;
+}
+.apiemus {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+    background: linear-gradient(90deg, #7a7a70 15%, #5e4726 100%);
+}
+.logo {
+    width: 600px;
+    float: left;
+    padding: 50px 40px 50px 0px; 
+}
+.apiemus h2 {
+    padding-top: 50px;
+    font-weight: bold;
+    line-height: 40px;
+    align-items: center;
+}
+.apiemus p{
+    color:rgb(19, 17, 17);
+    font-size: 18px;
+    gap: 5px;
+    align-items: center;
+    padding-top: 20px;
+}
+.two {
+    position: absolute;
+    bottom: 200px;
+     right: 200px;
+    color: rgb(20, 6, 6);
+    padding-left: 100px;
+  }
+  .three {
+    position: relative;
+  }
+  .four{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    font-size: 15px;
+    background: linear-gradient(90deg, #868644 25%, #e6a54c 100%);
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .four h6 {
+    padding-top: 50px;
+    font-weight: bold;
+    line-height: 40px;
+    align-items: center;
+}
+.four p{
+    color:rgb(19, 17, 17);
+    font-size: 18px;
+    gap: 5px;
+    align-items: center;
+    padding-top: 20px;
+}
+.mokymai{
+    padding-left: 30px;
+}
+.mokymai2 {
+    padding-right: 25px;
+}
+.energetikai {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+    background: linear-gradient(90deg, #7a7a70 15%, #5e4726 100%);
+}
+.energetiku {
+    width: 600px;
+    float: right;
+    padding: 50px 40px 50px 45px; 
+}
+.energetikai h2 {
+    padding-top: 50px;
+    font-weight: bold;
+    line-height: 40px;
+    align-items: center;
+}
+.energetikai p{
+    color:rgb(19, 17, 17);
+    font-size: 18px;
+    gap: 5px;
+    align-items: center;
+    padding-top: 20px;
+}
+.kontaktai{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    font-size: 15px;
+    background: linear-gradient(90deg, #79793e 15%, #ebb871 100%);
+}
+

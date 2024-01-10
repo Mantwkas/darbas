@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viktorina</title>
+    <link rel="logo" href="viktorina.png">
+    <style>
+.box {
+            border: 3px solid black;
+            background-color: rgb(179, 118, 26);
+            border-radius: 10px;
+            width: 550px;
+}
+    </style>
+</head>
+<body>
+
+<div class="box">
+Q1. What is the capital of France?<br>
+<input type="radio" name="qusetion1" >Berlin<br>
+<input type="radio" name="qusetion1" >London<br>
+<input type="radio" name="qusetion1" id="correct1">Paris<br>
+
+Q2. How many continents are there on Earth?<br>
+<input type="radio" name="qusetion2" >5<br>
+<input type="radio" name="qusetion2" id="correct2">7<br>
+<input type="radio" name="qusetion2" >6<br>
+
+Q3. Which planet is known as the Red Planet?<br>
+<input type="radio" name="qusetion3" id="correct3" >Mars<br>
+<input type="radio" name="qusetion3" >Jupiter<br>
+<input type="radio" name="qusetion3" >Saturn<br>
+
+Q4. What gas do plants breathe in that humans and animals breathe out?<br>
+<input type="radio" name="qusetion4" >Oxygen<br>
+<input type="radio" name="qusetion4" id="correct4">Carbon Dioxide<br>
+<input type="radio" name="qusetion4" >Nitrogen<br>
+
+Q5. What is the largest mammal in the world?<br>
+<input type="radio" name="qusetion5" >Elephant<br>
+<input type="radio" name="qusetion5" id="correct5">Blue Whale<br>
+<input type="radio" name="qusetion5" >Giraffe<br>
+
+<input type="submit" name="submit" value="submit Quiz" onclick="result()">
+
+</div>
+<script src="script.js"></script>
+    
+</body>
+</html>

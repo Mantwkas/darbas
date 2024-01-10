@@ -1,0 +1,133 @@
+.cover {
+    background-color: #C174C3;
+    width: 1920px;
+    height: 1080px;
+}
+.hero {
+    width: 1440px;
+    height: 820px;
+    align-items: center;
+    background-color: white;
+    margin-top: 100px;
+}
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 1239px;
+    position: absolute;
+    font-family: 'Jost', sans-serif;
+    padding-bottom: 150px;
+}
+#icon {font-size: 36px;
+    font-weight: bolder;
+}
+
+span {color: #C8815F;}
+
+.ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 40px;
+}
+.main2 {
+    width: 1240px;
+    height: 620px;
+    display: flex;
+    position: relative;
+    z-index: 1;
+}
+.left {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.text {
+    font-size: 17px;
+    padding-top: 150px;
+    padding-left: 90px;
+    padding-bottom: 10px;
+    font-family: 'Jost', sans-serif;    
+}
+.text2 {
+    font-family: 'Sofia Sans Semi Condensed', sans-serif;
+    font-size: 56px;
+    width: bold;
+    padding-left: 130px;
+    line-height: 60px;
+}
+.text3 {
+    font-family: 'Jost', sans-serif;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #999999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 40px;
+    margin: 20px 100px 200px 135px;
+}
+.arrow {
+    padding-top: 300px;
+    padding-left: 60px;
+    color:#999999;
+}
+.arrow2 {
+    padding-top: 300px;
+    padding-right: 10px;
+    color:#999999;
+}
+
+.right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+}
+.nike { 
+    font-size: 150px;
+    color: white;
+    padding-top: 50px;
+    font-family: 'Sofia Pro 1000', sans-serif;
+    line-height: 120px;
+    text-shadow: 0 0 2px rgb(154, 152, 152);
+    font-weight: 500px;
+    position: relative;
+}
+.box { 
+    height: 600px;
+    width: 300px;
+    font-size: 30px;
+}
+.box2 {
+    background-image: url(Nike\ \(4\).png);
+    width: 580px;
+    height: 480px;
+    margin-left: 20px;
+    margin-top: 40px;
+    position: absolute;
+}
+.box2::before {
+    content:"";
+    position: absolute;
+    bottom: 10px;
+    width:550px;
+    height: 15px;
+    margin-left: 40px;
+    background: rgba(178, 177, 177, 0.8);
+    border-radius: 0% 100% 96% 4% / 60% 50% 50% 40%;
+    z-index:-1;
+    filter: blur(5px);
+}
+.absolute {
+    position: absolute;
+    }
+.footer {
+    height: 100px;
+    width: 1439px;
+    display: flex;
+    justify-content: center;
+}
