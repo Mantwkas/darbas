@@ -6,6 +6,7 @@ const CommentModel = require("../models/comment");
 
 router.get("/", async (req, res) => {
 	//index.ejs failo atvaizdavimas iš views aplanko
+	
 
 	const posts = await PostModel.find({})
 		.populate({
